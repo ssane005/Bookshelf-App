@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title>Library of Sam</title>
+  </head>
+  <body>
+    <header>
+      <!-- <nav> -->
+        <section class="contact">
+          <a href="contact.html">Contact Us</a>
+        </section>
+        <section class="about">
+          <a href="about.html">About</a>
+        </section>
+        <section class="cart">          
+          <button><i class="fa fa-shopping-cart"></i></button>
+        </section>
+        <section class="search">
+          <input placeholder="Search" />
+          <button class="searchBtn">Search</button>
+        </section>
+        <section class="sort">
+          <label>Sort by</label>
+          <select class="sortBy">
+            <option value="titleaz">Title A-Z</option>
+            <option value="titleza">Title Z-A</option>
+          </select>
+        </section>
+        <section>
+          You have <span class="favCount">0</span> favorite books.
+          <button class="favUpdateBtn">Update</button>
+        </section>
+    <!-- </nav> -->
+    </header>
+    <main id="app">
+      <section class="addBookForm">
+        <form>
+          <label for="title">Title:</label><br>
+          <input type="text" class="title"><br>
+          <label for="author">Author:</label><br>
+          <input type="text" class="author"><br>
+        </form>
+        <ul class="bookComments"></ul>
+        <button class="addBook">Add Book</button>
+      </section>
+      <section class="books"></section>
+    </main>
+    <footer>
+      <a href="https://facebook.com" target="_blank"><img alt="Facebook" style="width: 30px; height: 30px; object-fit: cover;" fetchpriority="high" src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png/v1/fill/w_45,h_45,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/0fdef751204647a3bbd7eaa2827ed4f9.png"></a>
+      <a  href="https://twitter.com" target="_blank"><img alt="Twitter" style="width: 30px; height: 30px; object-fit: cover;" fetchpriority="high" src="https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png/v1/fill/w_45,h_45,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c7d035ba85f6486680c2facedecdcf4d.png"></a>
+      <a href="https://instagram.com" target="_blank"><img alt="Instagram" style="width: 30px; height: 30px; object-fit: cover;" fetchpriority="high" src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_45,h_45,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/01c3aff52f2a4dffa526d7a9843d46ea.png"></a>
+    </footer>
+    <script src="js/book-data.js"></script>
+    <script src="js/book.js"></script>
+    <script src="js/bookshelf.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
+

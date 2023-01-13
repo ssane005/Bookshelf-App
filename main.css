@@ -1,0 +1,95 @@
+nav {
+  display: flex;
+  gap: 2rem;
+}
+div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 250px;
+  background-color: rgba(237, 153, 140, 0.995);
+  border: 2px solid black;
+  justify-content: center;
+  align-content: top;
+}
+.bookshelf {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-flow: row;
+}
+.favBtn,
+.remBtn {
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  position: center;
+  margin: 10px;
+}
+body {
+  font: 400 18px helvetica, sans-serif;
+  color: #1c1c1c;
+  background: rgb(155, 152, 152);
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+/* Just the UL styling all you need */
+nav {
+  display: flex;
+  gap: 2rem;
+}
+header {
+  display: flex;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  position: fixed;
+  position: top;
+  height: 64px;
+  padding: 16px;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  box-shadow: 0 2px 4px 2px black;
+  background-color: rgb(240, 248, 255, 1);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbuttons {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+main > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+main > li {
+  line-height: 1.5;
+  text-indent: -30px;
+  padding: 8px 0 8px 30px;
+}
+
+li:before {
+  float: left;
+  display: block;
+  margin: 0 30px 0 0;
+}
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  position: fixed;
+  position: bottom;
+  height: 64px;
+  padding: 16px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  box-shadow: 0 -2px 4px -2px black;
+  background-color: rgb(240, 248, 255, 1);
+}
